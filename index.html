@@ -1,21 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Portfolio - BTS SIO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="portefolio.css"></a>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Gardes-Favroul Matéo</h1>
-    <h2>étudiant BTS SIO 1ère année</h2>
-    <p>
-        Adresse : 2 rue hugo pratt st sulpice de royan
-        Téléphone : 07 43 65 10 72
-        Email : favroul.mateo@gmail.com 
-    </p>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#sio1">Stage SIO1</a></li>
+            <li><a href="#sio2">Stage SIO2</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil">
+    <div class="card">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>
+            Je suis étudiant(e) en <strong>BTS SIO</strong>.  
+            Ce portfolio présente mon parcours, mon CV et mes stages réalisés en SIO1 et SIO2.
+        </p>
+    </div>
+</section>
+
+<section id="cv">
+    <div class="card">
+        <h2>Curriculum Vitae</h2>
+        <p><strong>Nom :</strong> À compléter</p>
+        <p><strong>Formation :</strong> BTS SIO</p>
+        <p><strong>Option :</strong> SLAM / SISR</p>
+        <p><strong>Compétences :</strong></p>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>PHP / SQL</li>
+            <li>Réseaux / Systèmes</li>
+        </ul>
+    </div>
+</section>
+
+<section id="sio1">
+    <div class="card">
+        <h2>Stage SIO1</h2>
+        <p><strong>Entreprise :</strong> À compléter</p>
+        <p><strong>Durée :</strong> X semaines</p>
+        <p><strong>Missions :</strong></p>
+        <ul>
+            <li>Découverte du milieu professionnel</li>
+            <li>Maintenance informatique</li>
+            <li>Développement de petites applications</li>
+        </ul>
+    </div>
+</section>
+
+<section id="sio2">
+    <div class="card">
+        <h2>Stage SIO2</h2>
+        <p><strong>Entreprise :</strong> À compléter</p>
+        <p><strong>Durée :</strong> X semaines</p>
+        <p><strong>Missions :</strong></p>
+        <ul>
+            <li>Projet informatique</li>
+            <li>Développement web</li>
+            <li>Gestion de base de données</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Portfolio BTS SIO</p>
+</footer>
+
 </body>
 </html>
-
-
-
-
