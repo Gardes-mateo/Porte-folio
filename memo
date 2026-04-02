@@ -1,0 +1,29 @@
+## **Gestion des fichiers**
+1. **Vérifier l'état des fichiers** (modifications locales, fichiers suivis ou non suivis) :
+   ```bash
+   git status
+   ```
+
+2. **Ajoute un fichier à la staging area** :
+   - Ajouter un fichier spécifique :
+     ```bash
+     git add <fichier>
+     ```
+   - Ajouter tous les fichiers :
+     ```bash
+     git add .
+     ```
+     > 🗒️ 1) Lorsque vous exécutez `git add`, vous indiquez à Git que le fichier est prêt à être ajouter à la prochaine validation (commit). Cela signifie que toutes les modifications (ajouts, suppressions, modifications) effectuées sur ce fichier seront inclus dans le prochain commit.
+     
+     > 🗒️ 2) seul les fichiers mentionnés dans la stagging area sont intégrés à la prochaine validation (commit).
+
+3. **Validation des changements (commit)** :
+   ```bash
+   git commit -m "Message de commit"
+   ```
+   > Un commit dans Git est une photo instantanée de l'état de votre projet à un instant "t". C'est une opération clé dans l'historique d'un dépôt Git, car chaque commit représente un enregistrement permanent et versionné des changements apportés au code ou aux fichiers du projet.
+
+4. **Annuler un ajout avant le commit** (réinitialiser un fichier à son état précédent) :
+   ```bash
+   git reset <fichier>
+   ```
