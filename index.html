@@ -631,16 +631,24 @@
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
-    // Ouverture / Fermeture du menu au clic sur le bouton
-    menuToggle.addEventListener('click', () => {
+    // Clic sur le bouton hamburger pour ouvrir/fermer
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         navLinks.classList.toggle('active');
     });
 
-    // Fermeture automatique du menu lors du clic sur un lien
+    // Fermeture au clic sur un lien
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
+    });
+
+    // Fermeture si on clique n'importe où ailleurs sur la page
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('active');
+        }
     });
 </script>
 </body>
