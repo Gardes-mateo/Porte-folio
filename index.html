@@ -9,21 +9,6 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-
-    menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-
-    // Ferme le menu après avoir cliqué sur un onglet
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
-        });
-    });
-</script>
 
 <body>
 
@@ -287,7 +272,7 @@
 
                 <p>
                     Installation,préparation et désasamblage de postes informatiques
-                    destinés aux utilisateurs.
+                    destinés aux utilisateurs en fonction de leurs demandes.
                 </p>
                 <img src="images stage1/20260601_113908.jpg" alt="Ordinateur installé pendant mon stage" class="photo-stage">
                 <img src="images stage1/20260603_143337.jpg" alt="Ordinateur désasamble pendant mon stage" class="photo-stage">
@@ -419,6 +404,23 @@
 
             </article>
 
+              <article class="mission-card featured">
+
+
+                <h3>8;Faux mail de Phishing</h3>
+
+                <p>
+                    Creer de faux mail de phishing et les envoies 
+                    au utilisateur via outlook pour les sensibiliser.
+                </p>
+
+                <div class="mission-tags">
+                    <span>Infrastructure</span>
+                    <span>Réseau</span>
+                </div>
+
+
+            </article>
         </div>
 
     </section>
@@ -559,7 +561,11 @@
                         <td>Infrastructure réseau</td>
                         <td>Travailler en mode projet</td>
                     </tr>
-
+                    <tr>
+                        <td>faux mail de phishing</td>
+                        <td>Infrastructure réseau</td>
+                        <td>Sensibilisation</td>
+                    </tr>
                 </tbody>
 
             </table>
