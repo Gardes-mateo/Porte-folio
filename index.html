@@ -2,216 +2,610 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - BTS SIO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <title>Portfolio BTS SIO SISR | Mateo Gardes-Favroul</title>
 
-        header {
-            background-color: #222;
-            padding: 15px 0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #00bcd4;
-        }
-
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#sio1">Stage SIO1</a></li>
-            <li><a href="#sio2">Stage SIO2</a></li>
-        </ul>
-    </nav>
-</header>
+  
 
-<section id="accueil">
-    <div class="card">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>
-            Je suis étudiant(e) en <strong>BTS SIO</strong>.  
-            Ce portfolio présente mon parcours, mon CV et mes stages réalisés en SIO1 et SIO2.
-        </p>
-    </div>
-</section>
+    <header class="header">
+        <nav class="navbar">
 
-<section id="cv">
-    <div class="card">
-        <h2>Curriculum Vitae</h2>
-        <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>CV Matéo GARDES FAVROUL</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; }
-        header { border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; }
-        h1 { color: #2c3e50; margin-bottom: 5px; }
-        .contact { font-size: 0.9em; color: #555; }
-        h2 { color: #3498db; border-left: 5px solid #3498db; padding-left: 10px; margin-top: 25px; text-transform: uppercase; font-size: 1.2em; }
-        .exp-item, .edu-item { margin-bottom: 15px; }
-        .date { font-weight: bold; color: #7f8c8d; }
-        .job-title { font-weight: bold; color: #2c3e50; }
-        ul { margin-top: 5px; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Matéo GARDES FAVROUL</h1>
-        <div class="contact">
-            18 ans | 2 rue Hugo Pratt, 17200 Saint Sulpice de Royan<br>
-            📞 06 58 22 32 40 | 📧 favroul.mateo@gmail.com
-        </div>
+            <div class="logo">
+                <span>&lt;/&gt;</span> Portfolio Gardes-Favroul
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#stage">Mon stage</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
     </header>
 
-    <section>
-        <h2>Profil</h2>
-        <p>Étudiant en <strong>BTS SIO</strong>, dynamique et rigoureux. Fort d'expériences variées (informatique et entretien), je suis prêt à m'investir pleinement dans des missions techniques ou saisonnières en apportant mon sérieux et ma capacité d'apprentissage.</p>
+
+  
+
+    <section id="accueil" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">PORTFOLIO BTS SIO</p>
+
+            <h1>
+                Bonjour, je suis
+                <span>Matéo Gardes-Favroul</span>
+            </h1>
+
+            <h2>
+                Étudiant en BTS SIO — Option SISR
+            </h2>
+
+            <p class="hero-description">
+                Bienvenue sur mon portfolio professionnel.
+                Ce site présente mon parcours, mon stage réalisé
+                à la Mairie de Royan ainsi que les différentes
+                missions informatiques auxquelles j'ai participé.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#stage" class="btn primary">
+                    Découvrir mon stage
+                </a>
+
+                <a href="#missions" class="btn secondary">
+                    Voir mes missions
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
-    <section>
-        <h2>Formation</h2>
-        <div class="edu-item">
-            <span class="date">2025 - Présent :</span> <span class="job-title">BTS SIO (Services Informatiques aux Organisations)</span> - 1ère année
+
+   
+
+    <section id="apropos" class="section">
+
+        <div class="section-title">
+            <p>PRÉSENTATION</p>
+            <h2>À propos de moi</h2>
         </div>
-        <div class="edu-item">
-            <span class="date">2025 :</span> <span class="job-title">Baccalauréat Général</span> - Mention Assez Bien
+
+        <div class="about-grid">
+
+            <div class="about-photo">
+                <div class="photo-placeholder">
+                    <span>Passionée d'échec de sport et de math avec un objectif de bac +5 en cybersécurité</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <h3>Mon parcours</h3>
+
+                <p>
+                    Je suis actuellement étudiant en
+                    <strong>BTS Services Informatiques aux Organisations</strong>,
+                    option <strong>SISR</strong>
+                    (Solutions d'Infrastructure, Systèmes et Réseaux).
+                </p>
+
+                <p>
+                    Cette formation me permet de développer mes compétences
+                    dans les domaines des systèmes informatiques, des réseaux,
+                    de l'administration des équipements et du support aux utilisateurs.
+                </p>
+
+                <p>
+                    Dans le cadre de ma formation, j'ai réalisé un stage
+                    à la <strong>Mairie de Royan</strong>.
+                    Cette expérience m'a permis de découvrir le fonctionnement
+                    d'un service informatique dans une collectivité et de
+                    participer à différentes interventions techniques.
+                </p>
+
+                <div class="info-cards">
+
+                    <div class="info-card">
+                        <div>
+                            <strong>🎓Formation</strong>
+                            <p>BTS SIO</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div>
+                            <strong>🖥️Option</strong>
+                            <p>SISR</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div>
+                            <strong>🏢Stage</strong>
+                            <p>Mairie de Royan</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="edu-item">
-            <span class="date">2022 :</span> <span class="job-title">Diplôme National du Brevet</span> - Mention Très Bien
-        </div>
+
     </section>
 
-    <section>
-        <h2>Expériences Professionnelles</h2>
-        <div class="exp-item">
-            <span class="job-title">Agent d'entretien</span> | Centre de loisirs
-            <ul>
-                <li>Maintenance des locaux et gestion du matériel.</li>
-            </ul>
+
+    
+
+    <section id="stage" class="section dark-section">
+
+        <div class="section-title">
+            <p>EXPÉRIENCE PROFESSIONNELLE</p>
+            <h2>Mon stage à la Mairie de Royan</h2>
         </div>
-        <div class="exp-item">
-            <span class="job-title">Agent de ménage</span> | Camping
-            <ul>
-                <li>Entretien rigoureux des hébergements, respect des normes d'hygiène.</li>
-            </ul>
+
+        <div class="stage-intro">
+
+            <div class="stage-main">
+
+                <h3>Une expérience dans le domaine des systèmes et réseaux</h3>
+
+                <p>
+                    Dans le cadre de mon BTS SIO SISR, j'ai effectué mon stage
+                    au sein de la <strong>Mairie de Royan</strong>.
+                </p>
+
+                <p>
+                    Durant cette période, j'ai participé à différentes missions
+                    liées au support informatique, au matériel, au réseau et à
+                    l'évolution de l'infrastructure informatique.
+                </p>
+
+                <p>
+                    J'ai notamment pu intervenir sur des équipements réseau,
+                    installer et configurer des ordinateurs, réaliser du
+                    câblage, intervenir sur des tablettes et participer à
+                    l'installation de caméras de surveillance.
+                </p>
+
+                <p>
+                    Une partie importante de mon stage a également consisté
+                    à assister l'équipe informatique lors de la migration
+                    de l'infrastructure.
+                </p>
+
+            </div>
+
+            <div class="stage-details">
+
+                <div class="detail">
+                    <div>
+                        <small>🏢Entreprise</small>
+                        <strong>Mairie de Royan</strong>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div>
+                        <small>📅Période</small>
+                        <strong>4 avril → 12 juin 2026</strong>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div>
+                        <small>💻Domaine</small>
+                        <strong>Systèmes & Réseaux</strong>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div>
+                        <small>🎯Formation</small>
+                        <strong>BTS SIO — SISR</strong>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div class="exp-item">
-            <span class="date">01/2022 :</span> <span class="job-title">Stage Informatique</span> | Mairie de Royan
-            <ul>
-                <li>Maintenance hardware, installation de postes et gestion de parc.</li>
-            </ul>
-        </div>
+
     </section>
 
-    <section>
-        <h2>Compétences & Centres d'intérêt</h2>
-        <ul>
-            <li><strong>Informatique :</strong> Maintenance, Réseaux (notions BTS), Suite Office.</li>
-            <li><strong>Langues :</strong> Anglais (B1/B2), Espagnol (A2).</li>
-            <li><strong>Sport :</strong> Tennis en club depuis 10 ans.</li>
-        </ul>
+
+
+    <section id="missions" class="section">
+
+        <div class="section-title">
+            <p>TRAVAUX RÉALISÉS</p>
+            <h2>Mes missions</h2>
+        </div>
+
+        <div class="missions-grid">
+
+
+            
+
+            <article class="mission-card">
+
+                
+
+                <h3>🌐1.Dépannage de box et problèmes réseau</h3>
+
+                <p>
+                    Participation au diagnostic et au dépannage de problèmes
+                    liés aux équipements réseau et aux connexions.tel que des box internets.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260513_144908.jpg" alt="Ordinateur installé pendant mon stage" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Réseau</span>
+                    <span>Dépannage</span>
+                    <span>Diagnostic</span>
+                </div>
+
+                
+
+            </article>
+
+
+            
+
+            <article class="mission-card">
+
+
+                <h3>💻2.Installation d'ordinateurs</h3>
+
+                <p>
+                    Installation,préparation et désasamblage de postes informatiques
+                    destinés aux utilisateurs.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260601_113908.jpg" alt="Ordinateur installé pendant mon stage" class="photo-stage">
+                <img src="c:\Users\crani\Pictures\20260603_143337.jpg" alt="Ordinateur désasamble pendant mon stage" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Postes</span>
+                    <span>Installation</span>
+                    <span>Configuration</span>
+                </div>
+
+               
+
+            </article>
+
+
+            
+
+            <article class="mission-card">
+
+                
+
+                <h3>🔌3.Configuration de switch</h3>
+
+                <p>
+                    Participation à la configuration et à la mise en service
+                    d'équipements réseau.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260504_145429.jpg" alt="Configuration d'un swicth alcatel lucent version 8 p24" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Switch</span>
+                    <span>Réseau</span>
+                    <span>Infrastructure</span>
+                </div>
+
+                
+
+            </article>
+
+
+            
+
+            <article class="mission-card">
+
+                
+
+                <h3>🧰4.Câblage réseau</h3>
+
+                <p>
+                    Participation aux opérations de câblage et de raccordement
+                    des équipements informatiques.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260506_142856.jpg" alt=">Gestion du cablages" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Câblage</span>
+                    <span>Réseau</span>
+                    <span>Matériel</span>
+                </div>
+
+                
+
+            </article>
+
+
+           
+
+            <article class="mission-card">
+
+
+                <h3>📱5.Configuration de tablettes</h3>
+
+                <p>
+                    Préparation et modification de tablettes utilisées
+                    dans le cadre professionnel ainsi que de leur aonnement free.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260506_095404.jpg" alt="configuration de tablettes et des abonnement free" class="photo-stage">
+                <img src="c:\Users\crani\Pictures\20260602_102403.jpg" alt="configuration de tablettes et des abonnement free" class="photo-stage">
+                <img src="c:\Users\crani\Pictures\20260602_102400.jpg" alt="configuration de tablettes et des abonnement free" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Tablette</span>
+                    <span>Configuration</span>
+                    <span>Mobilité</span>
+                </div>
+
+
+
+            </article>
+
+
+          
+
+            <article class="mission-card">
+
+
+                <h3>📷6.Installation de caméras</h3>
+
+                <p>
+                    Participation à l'installation et à la mise en place
+                    de caméras de surveillance ainsi cas l'installation de leurs disques de stockages.
+                </p>
+                <img src="c:\Users\crani\Pictures\20260506_140803.jpg" alt="Gestion du stockage des images des caméras" class="photo-stage">
+                <div class="mission-tags">
+                    <span>Caméra</span>
+                    <span>Réseau</span>
+                    <span>Sécurité</span>
+                </div>
+
+
+            </article>
+
+
+            
+
+            <article class="mission-card featured">
+
+
+                <h3>🔄7.Migration de l'infrastructure</h3>
+
+                <p>
+                    Participation et observation de la migration d'une
+                    partie importante de l'infrastructure informatique.
+                </p>
+
+                <div class="mission-tags">
+                    <span>Migration</span>
+                    <span>Infrastructure</span>
+                    <span>Réseau</span>
+                </div>
+
+
+            </article>
+
+        </div>
+
     </section>
-</body>
-</html>
-    </div>
-</section>
 
-<section id="sio1">
-    <div class="card">
-        <h2>Stage SIO1</h2>
-        <p><strong>Entreprise :</strong> Mairie de Royan</p>
-        <p><strong>Durée :</strong> 6 semaines</p>
-        <p><strong>Missions :</strong></p>
-        <ul>
-            <li>Découverte du milieu professionnel</li>
-            <li>Maintenance informatique</li>
-            <li>Développement de petites applications</li>
-        </ul>
-    </div>
-</section>
 
-<section id="sio2">
-    <div class="card">
-        <h2>Stage SIO2</h2>
-        <p><strong>Entreprise :</strong> À compléter</p>
-        <p><strong>Durée :</strong> X semaines</p>
-        <p><strong>Missions :</strong></p>
-        <ul>
-            <li>Projet informatique</li>
-            <li>Développement web</li>
- <h2>Curriculum Vitae</h2>
-        <p><strong>Nom :</strong> Gardes-Favroul</p>
-        <p><strong>Formation :</strong> BTS SIO</p>
-        <p><strong>Option :</strong> SISR</p>
-        <p><strong>Compétences :</strong></p>
-        <ul>
-            <li>HTML / CSS</li>
-            <li>PHP / SQL</li>
-            <li>Réseaux / Systèmes</li>
-        </ul>
-            <li>Gestion de base de données</li>
-        </ul>
-    </div>
-</section>
 
-<footer>
-    <p>© 2026 - Portfolio BTS SIO</p>
-</footer>
+    <section id="competences" class="section dark-section">
+
+        <div class="section-title">
+            <p>BTS SIO</p>
+            <h2>Mes compétences</h2>
+        </div>
+
+        <p class="section-description">
+            Les missions réalisées pendant mon stage m'ont permis de mobiliser
+            plusieurs compétences du référentiel du BTS SIO.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>1.Gérer le patrimoine informatique</h3>
+                <p>
+                    Installation, configuration et maintenance de postes
+                    informatiques et d'équipements réseau.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>2.Répondre aux incidents et aux demandes</h3>
+                <p>
+                    Diagnostic et résolution de problèmes rencontrés
+                    sur les équipements informatiques et réseau.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>3.Développer la présence en ligne</h3>
+                <p>
+                    Compétence à compléter selon les activités réalisées
+                    pendant la formation ou le stage.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>4.Travailler en mode projet</h3>
+                <p>
+                    Participation à une opération importante de migration
+                    de l'infrastructure informatique.Projet de ressources 
+                    tout les solutions contre le piratage des swicth alcatel
+                    de la version que lentreprise utilise et donner la maniere
+                    de la mettre en place cette solution.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>5.Mettre à disposition un service informatique</h3>
+                <p>
+                    Installation et mise en service d'équipements destinés
+                    aux utilisateurs et à l'infrastructure.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>6.Organiser son développement professionnel</h3>
+                <p>
+                    Développement de mes compétences techniques grâce
+                    aux différentes situations rencontrées en entreprise.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section class="section">
+
+        <div class="section-title">
+            <p>SYNTHÈSE</p>
+            <h2>Tableau de synthèse de mes activités</h2>
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Mission</th>
+                        <th>Technologies / matériels</th>
+                        <th>Compétence</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Dépannage réseau</td>
+                        <td>Box, réseau</td>
+                        <td>Gérer le patrimoine informatique</td>
+                    </tr>
+
+                    <tr>
+                        <td>Installation d'ordinateurs</td>
+                        <td>PC, système</td>
+                        <td>Gérer le patrimoine informatique</td>
+                    </tr>
+
+                    <tr>
+                        <td>Configuration de switch</td>
+                        <td>Switch, réseau</td>
+                        <td>Mettre à disposition un service</td>
+                    </tr>
+
+                    <tr>
+                        <td>Câblage</td>
+                        <td>Câbles réseau, prises</td>
+                        <td>Gérer le patrimoine informatique</td>
+                    </tr>
+
+                    <tr>
+                        <td>Configuration de tablettes</td>
+                        <td>Tablettes</td>
+                        <td>Mettre à disposition un service</td>
+                    </tr>
+
+                    <tr>
+                        <td>Installation de caméras</td>
+                        <td>Caméras, réseau</td>
+                        <td>Gérer le patrimoine informatique</td>
+                    </tr>
+
+                    <tr>
+                        <td>Migration de l'infrastructure</td>
+                        <td>Infrastructure réseau</td>
+                        <td>Travailler en mode projet</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+             
+    <section id="contact" class="contact-section">
+
+        <div class="section-title">
+            <p>CONTACT</p>
+            <h2>Me contacter</h2>
+        </div>
+
+        <div class="contact-content">
+
+            <p>
+                Pour toute question concernant mon parcours ou mon expérience
+                , vous pouvez me contacter.
+            </p>
+
+            <div class="contact-info">
+
+                <div>
+                    <span>📧</span>
+                    <strong>favroul.mateo@gmail.com</strong>
+                </div>
+
+                <div>
+                    <span>📞</span>
+                    <strong>07 43 65 10 72</strong>
+                </div>
+
+                <div>
+                    <span>📍</span>
+                    <strong>Saint Sulpice de royan</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  
+
+    <footer>
+
+        <p>
+            © 2026 Gardes-Favroul Matéo — Portfolio BTS SIO SISR
+        </p>
+
+        <p>
+            Stage réalisé à la Mairie de Royan
+        </p>
+
+    </footer>
+
+    
+
 </body>
 </html>
