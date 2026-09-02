@@ -16,52 +16,36 @@
 
     --max-width: 1150px;
 }
-
-```css
-/* Bouton menu ☰ */
 .menu-toggle {
     display: block;
-    background: none;
     border: none;
-    color: white;
-    font-size: 28px;
+    background: transparent;
+    color: var(--dark);
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* Menu caché par défaut */
 .nav-links {
     display: none;
     position: absolute;
     top: 70px;
     right: 20px;
+    width: 220px;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background: #111;
-    border-radius: 10px;
+    gap: 5px;
+    padding: 15px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
     list-style: none;
     z-index: 1000;
 }
 
-/* Menu ouvert */
 .nav-links.active {
     display: flex;
 }
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Effet au survol */
-.nav-links a:hover {
-    color: #00bfff;
-}
-```
-
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -125,39 +109,6 @@ button {
 .logo span {
     color: var(--primary);
 }
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-
-    list-style: none;
-}
-
-.nav-links a {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--primary);
-}
-
-.menu-toggle {
-    display: none;
-
-    border: none;
-    background: transparent;
-
-    font-size: 28px;
-    cursor: pointer;
-}
-
-
-
 
 .hero {
     min-height: 100vh;
@@ -908,35 +859,6 @@ footer p:first-child {
 
 
 @media (max-width: 900px) {
-
-    .nav-links {
-        position: absolute;
-
-        top: 75px;
-        left: 0;
-
-        width: 100%;
-
-        display: none;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        padding: 25px;
-
-        background: white;
-
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
 
     .about-grid,
     .stage-intro {
