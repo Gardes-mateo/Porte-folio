@@ -870,33 +870,53 @@ footer p:first-child {
 
 @media (max-width: 900px) {
 
+    /* Configuration du menu déroulant mobile */
     .nav-links {
         position: absolute;
-
-        top: 75px;
+        top: 100%; /* S'affiche juste en dessous du header */
         left: 0;
-
         width: 100%;
-
-        display: none;
-
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        
         flex-direction: column;
-
         align-items: flex-start;
+        gap: 0;
+        padding: 0;
+        
+        /* Masqué par défaut avec animation */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+    }
 
-        padding: 25px;
+    /* Style des éléments du menu */
+    .nav-links li {
+        width: 100%;
+    }
 
-        background: white;
-
+    .nav-links a {
+        display: block;
+        padding: 15px 25px;
+        width: 100%;
         border-bottom: 1px solid var(--border);
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-links li:last-child a {
+        border-bottom: none;
     }
 
+    /* Classe activée lors du clic */
+    .nav-links.active {
+        max-height: 400px; /* Hauteur suffisante pour afficher tous les liens */
+        padding: 10px 0;
+    }
+
+    /* Affichage du bouton hamburger */
     .menu-toggle {
         display: block;
+        color: var(--dark);
     }
 
     .about-grid,
