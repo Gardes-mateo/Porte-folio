@@ -318,7 +318,7 @@
 
                 
 
-                <h3>🧰4.Câblage réseau</h3>
+                <h3>4.Câblage réseau</h3>
 
                 <p>
                     Participation aux opérations de câblage et de raccordement
@@ -407,7 +407,7 @@
               <article class="mission-card featured">
 
 
-                <h3>8;Faux mail de Phishing</h3>
+                <h3>8.Faux mail de Phishing</h3>
 
                 <p>
                     Creer de faux mail de phishing et les envoies 
@@ -562,7 +562,7 @@
                         <td>Travailler en mode projet</td>
                     </tr>
                     <tr>
-                        <td>faux mail de phishing</td>
+                        <td>Faux mails de phishing</td>
                         <td>Infrastructure réseau</td>
                         <td>Sensibilisation</td>
                     </tr>
@@ -617,7 +617,7 @@
     <footer>
 
         <p>
-            © 2026 Gardes-Favroul Matéo — Portfolio BTS SIO SISR
+            2026 Gardes-Favroul Matéo — Portfolio BTS SIO SISR
         </p>
 
         <p>
@@ -627,6 +627,21 @@
     </footer>
 
     
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
+    // Ouverture / Fermeture du menu au clic sur le bouton
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Fermeture automatique du menu lors du clic sur un lien
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
