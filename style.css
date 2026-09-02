@@ -65,18 +65,15 @@ button {
 }
 
 .navbar {
+    position: relative; 
     max-width: var(--max-width);
     margin: auto;
-
     min-height: 75px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 20px;
 }
-
 .logo {
     font-size: 20px;
     font-weight: 800;
@@ -90,35 +87,53 @@ button {
 .nav-links {
     position: absolute;
     top: 75px;
-    right: 20px;
+    right: 50%;
+    transform: translateX(50%) translateY(-10px);
     width: 220px;
+    
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 12px;
     box-shadow: var(--shadow);
     
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
-    padding: 0;
     
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
     transition: all 0.3s ease;
+}
+
+
+.nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50%) translateY(0);
 }
 
 .nav-links li {
     width: 100%;
-    text-align: center;
+    list-style: none !important; 
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
     display: block;
     padding: 12px 20px;
     width: 100%;
-    text-align: center !important; /* Applique le centrage du texte */
+    text-align: center !important; 
     border-bottom: 1px solid var(--border);
+}
+
+.nav-links li:last-child a {
+    border-bottom: none;
 }
 
 .nav-links a:hover {
