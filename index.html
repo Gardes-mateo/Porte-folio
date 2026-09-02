@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    // Ferme le menu après avoir cliqué sur un onglet
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+</script>
 
 <body>
 
@@ -18,7 +33,7 @@
         <nav class="navbar">
 
             <div class="logo">
-                <span>&lt;/&gt;</span> Portfolio Gardes-Favroul
+                 Portfolio BTS SIO Gardes-Favroul
             </div>
 
             <button class="menu-toggle" id="menu-toggle">
@@ -44,10 +59,9 @@
 
         <div class="hero-content">
 
-            <p class="small-title">PORTFOLIO BTS SIO</p>
+            
 
             <h1>
-                Bonjour, je suis
                 <span>Matéo Gardes-Favroul</span>
             </h1>
 
