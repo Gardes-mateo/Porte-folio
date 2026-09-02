@@ -865,60 +865,59 @@ footer p:first-child {
     margin-left: 20px;
 }
 
+   
+.menu-toggle {
+    display: block;
+    color: var(--dark);
+}
 
+
+.nav-links {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    width: 250px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0;
+    
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    padding: 12px 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-links li:last-child a {
+    border-bottom: none;
+}
+
+
+.nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 
 
 @media (max-width: 900px) {
-
-    /* Configuration du menu déroulant mobile */
-    .nav-links {
-        position: absolute;
-        top: 100%; /* S'affiche juste en dessous du header */
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        border-bottom: 1px solid var(--border);
-        box-shadow: var(--shadow);
-        
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-        padding: 0;
-        
-        /* Masqué par défaut avec animation */
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out, padding 0.3s ease;
-    }
-
-    /* Style des éléments du menu */
-    .nav-links li {
-        width: 100%;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 15px 25px;
-        width: 100%;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav-links li:last-child a {
-        border-bottom: none;
-    }
-
-    /* Classe activée lors du clic */
-    .nav-links.active {
-        max-height: 400px; /* Hauteur suffisante pour afficher tous les liens */
-        padding: 10px 0;
-    }
-
-    /* Affichage du bouton hamburger */
-    .menu-toggle {
-        display: block;
-        color: var(--dark);
-    }
-
     .about-grid,
     .stage-intro {
         grid-template-columns: 1fr;
@@ -929,14 +928,7 @@ footer p:first-child {
     .documents-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .about-photo {
-        max-width: 500px;
-        margin: auto;
-        width: 100%;
-    }
 }
-
 
 @media (max-width: 600px) {
 
