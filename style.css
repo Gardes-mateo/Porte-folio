@@ -17,6 +17,47 @@
     --max-width: 1150px;
 }
 
+```css
+/* Bouton menu ☰ */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Menu caché par défaut */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    list-style: none;
+    z-index: 1000;
+}
+
+/* Menu ouvert */
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Effet au survol */
+.nav-links a:hover {
+    color: #00bfff;
+}
+```
 
 
 
