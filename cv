@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Matéo GARDES FAVROUL</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; }
+        header { border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        .contact { font-size: 0.9em; color: #555; }
+        h2 { color: #3498db; border-left: 5px solid #3498db; padding-left: 10px; margin-top: 25px; text-transform: uppercase; font-size: 1.2em; }
+        .exp-item, .edu-item { margin-bottom: 15px; }
+        .date { font-weight: bold; color: #7f8c8d; }
+        .job-title { font-weight: bold; color: #2c3e50; }
+        ul { margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matéo GARDES FAVROUL</h1>
+        <div class="contact">
+            18 ans | 2 rue Hugo Pratt, 17200 Saint Sulpice de Royan<br>
+            📞 06 58 22 32 40 | 📧 favroul.mateo@gmail.com
+        </div>
+    </header>
+
+    <section>
+        <h2>Profil</h2>
+        <p>Étudiant en <strong>BTS SIO</strong>, dynamique et rigoureux. Fort d'expériences variées (informatique et entretien), je suis prêt à m'investir pleinement dans des missions techniques ou saisonnières en apportant mon sérieux et ma capacité d'apprentissage.</p>
+    </section>
+
+    <section>
+        <h2>Formation</h2>
+        <div class="edu-item">
+            <span class="date">2025 - Présent :</span> <span class="job-title">BTS SIO (Services Informatiques aux Organisations)</span> - 1ère année
+        </div>
+        <div class="edu-item">
+            <span class="date">2025 :</span> <span class="job-title">Baccalauréat Général</span> - Mention Assez Bien
+        </div>
+        <div class="edu-item">
+            <span class="date">2022 :</span> <span class="job-title">Diplôme National du Brevet</span> - Mention Très Bien
+        </div>
+    </section>
+
+    <section>
+        <h2>Expériences Professionnelles</h2>
+        <div class="exp-item">
+            <span class="job-title">Agent d'entretien</span> | Centre de loisirs
+            <ul>
+                <li>Maintenance des locaux et gestion du matériel.</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <span class="job-title">Agent de ménage</span> | Camping
+            <ul>
+                <li>Entretien rigoureux des hébergements, respect des normes d'hygiène.</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <span class="date">01/2022 :</span> <span class="job-title">Stage Informatique</span> | Mairie de Royan
+            <ul>
+                <li>Maintenance hardware, installation de postes et gestion de parc.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Compétences & Centres d'intérêt</h2>
+        <ul>
+            <li><strong>Informatique :</strong> Maintenance, Réseaux (notions BTS), Suite Office.</li>
+            <li><strong>Langues :</strong> Anglais (B1/B2), Espagnol (A2).</li>
+            <li><strong>Sport :</strong> Tennis en club depuis 10 ans.</li>
+        </ul>
+    </section>
+</body>
+</html>
