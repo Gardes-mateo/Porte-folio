@@ -29,3 +29,19 @@
 5.git pull
 
 6.git add,git commit -m "messages" ... etc en boucle 
+
+
+ajout facile 
+ creer une branche git checkout -b nom_branche
+
+modifier le fichier (nano nom_fichier)
+
+git add nom_fichier (ajoute le fichier au local)
+
+ git commit -m "modif" (valide)
+
+git push (ajoute pour moi)
+
+git checkout (master change de branche)
+
+git merge ma_branche (ajoute poiur tout le monde)
