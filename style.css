@@ -415,36 +415,25 @@ button {
     font-size: 14px;
 }
 
-.table-container {
-    overflow-x: auto;
+.pdf-container {
+    width: 100%;
+    background: var(--surface-card);
     border-radius: var(--radius);
     border: 1px solid var(--border);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-table {
+.pdf-viewer {
     width: 100%;
-    border-collapse: collapse;
-    background: var(--surface);
-    text-align: left;
-}
-
-th {
-    background: var(--surface-card);
-    color: var(--primary);
-    padding: 15px;
-    font-size: 13px;
-    border-bottom: 1px solid var(--border);
-}
-
-td {
-    padding: 15px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 14px;
-}
-
-tr:last-child td {
-    border-bottom: none;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
 }
 
 .contact-section {
